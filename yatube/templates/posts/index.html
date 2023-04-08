@@ -1,0 +1,17 @@
+ 
+{% extends 'base.html' %}        
+
+{% block content %}   
+{% comment %} Information on Main Page  {% endcomment %}
+<!DOCTYPE html>
+<html>
+  <head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"> 
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <h1>{{ text }}</h1>
+  </body>
+</html> 
+{% endblock %}
