@@ -4,7 +4,7 @@ from .models import Post, Group
 
 class PostAdmin(admin.ModelAdmin):
     # Перечисляем поля, которые должны отображаться в админке
-    list_display = ('pk', 'text', 'pub_date', 'author') 
+    list_display = ('pk', 'text', 'pub_date', 'author', 'group') 
     # Это позволит изменять поле group в любом посте без лишних движений мышкой, прямо из списка постов
     list_editable = ('group',)
     # Добавляем интерфейс для поиска по тексту постов
